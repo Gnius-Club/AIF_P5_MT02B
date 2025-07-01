@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM02B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2B 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes, en equipo, construyan un mecanismo/chasis funcional con un servomotor en su robot Nezha, implementen el plan de secuencia que diseñaron, y prueben y ajusten su programa para lograr la rutina deseada.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y mostrar un ejemplo construido.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Refrescar el plan y dar consejos de construcción.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Construcción, programación, prueba y depuración.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Demostración de los robots y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un mecanismo/chasis funcional con un servomotor, programado para ejecutar una o más de las secuencias completas de movimientos y pausas diseñadas en la Sesión 2A.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                        <li>1 Nezha Pro Sports Kit por equipo de 4 estudiantes.</li>
+                                        <li>Chasis de robot base de la sesión anterior por cada equipo.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Tener los kits y los chasis de la sesión anterior listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-11) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos y los tiempos.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Ten listo un ejemplo ya construido de un mecanismo simple con servo (ej. una palanca-pateadora) para dar inspiración visual.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión de construcción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, ingenieros! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para continuar nuestra misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Veo que Xolo les está contestando y está listo para esta aventura de construcción. Si alguien no ha recibido respuesta, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar el objetivo de la clase y mostrar un ejemplo físico para inspirar la construcción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Contextualización ⏰ 2 minutos</h3>
+                            <p>Anuncia el inicio de la actividad y conecta con el plan de la sesión anterior.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipos, es momento de la acción con nuestra actividad <strong>'I Can Statement + Ejemplificación'</strong>! Ya tienen su plan maestro para crear una rutina robótica. Hoy nos enfocaremos en dos cosas: primero, construir el mecanismo/chasis con el servo que imaginaron, como una palanca o un brazo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Apoyo Físico (Ejemplificación) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 4) Muestra el ejemplo físico que preparaste para darles una idea clara de cómo se ve un mecanismo terminado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para darles una chispa de inspiración, aquí tienen un ejemplo de cómo se podría ver. (Muestra tu mecanismo pre-construido). Esto les puede dar una idea de cómo unir las piezas y el servo al chasis del robot.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Lo segundo será traducir ese plan a código real y hacer que su robot ejecute la secuencia. Al final de la clase, podrán decir: <strong>'Mi equipo construyó un mecanismo con servo y logramos programar una secuencia completa de movimientos y pausas.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
+                <p>Guiar a los alumnos para que refresquen su "idea" con Xolo, reciban su "plan" y consejos de construcción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recordando la Idea y el Plan ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Anuncia la actividad y guía a los equipos para que recuperen su plan de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, entremos al <strong>A.I. GYM</strong>! Antes de tomar las piezas, recordemos la 'idea' de su secuencia. ¿Cuál era esa rutina o misión que planearon? Vuelvan a describirle su 'idea' a Xolo. Por ejemplo: <strong>'Xolo, queremos que el robot avance, se detenga, patee con el servo y luego retroceda.'</strong>. Él les devolverá el plan exacto para guiar su programación.</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// PLAN para: Avanzar, Patear, Retroceder
+// PASO 1: Avanzar
+nezha_motor_M1_velocidad(60)
+nezha_motor_M2_velocidad(60)
+ESPERAR(1500)
+// PASO 2: Detenerse completamente
+nezha_motor_M1_velocidad(0)
+nezha_motor_M2_velocidad(0)
+ESPERAR(500)
+// PASO 3: Patear (movimiento rápido del servo)
+nezha_servo_S1_angulo(90)
+ESPERAR(300)
+nezha_servo_S1_angulo(0)
+ESPERAR(1000)
+// PASO 4: Retroceder
+nezha_motor_M1_velocidad(-40)
+nezha_motor_M2_velocidad(-40)
+ESPERAR(1000)
+// PASO FINAL: Detener todo
+nezha_motor_M1_velocidad(0)
+nezha_motor_M2_velocidad(0)</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Consejos de Construcción ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Comparte los consejos conceptuales para el ensamblaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ya tienen su plan fresco. Ahora, presten atención a estos consejos de Xolo para la construcción. Recuerden: piensen en el <strong>Punto de Pivote</strong> para que la palanca se mueva bien, aseguren que tenga <strong>Libertad de Movimiento</strong> y no choque, y verifiquen la <strong>Conexión</strong> del cable del servo al puerto correcto, ¡como S1 o S2!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Fases de construcción, programación, prueba y depuración del robot.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Construcción del Mecanismo/Chasis (Equipo) ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Anuncia la actividad e indica a los equipos que comiencen el ensamblaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegó la hora del <strong>Brain Spark</strong>! ¡Manos a la obra! Reúnanse con su equipo y, usando su chasis base, construyan juntos el mecanismo/chasis con servo que acordaron en la clase pasada. ¡Estaré circulando para ayudarles con cualquier desafío mecánico!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Organización y Primera Implementación (Equipo) ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Guía a los equipos para que se organicen y comiencen a programar el primer plan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Robot construido! Ahora, la parte estratégica. Recuerden que tienen varios planes individuales (hasta 4). <strong>Como equipo, elijan UNO de esos planes – el que les parezca más interesante o el que quieran ver funcionar primero.</strong> El 'dueño' de ese plan será el primero en programarlo en MakeCode. Los demás, ayúdenle o vayan preparando su propio código. Abran MakeCode, traduzcan el plan elegido a bloques y descárguenlo. ¡Vamos a ver esa primera prueba! La organización y la colaboración son cruciales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Probar, Depurar y Rotar Planes (Equipo) ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Facilita el ciclo de prueba y depuración rotativo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Hora de la verdad! Prueben el plan actual. ¿Funciona? ¡Genial! <strong>Si no funciona perfectamente sin errores, ¡no hay problema! Es momento de depurar en equipo. Describan el problema a Xolo para que les ayude a perfeccionarlo.</strong> Una vez que el plan esté funcionando perfectamente, ¡roten! El siguiente miembro del equipo carga su plan individual y lo prueba. El objetivo es que todos los miembros del equipo logren ejecutar sus planes, ¡así que intenten probar tantos como el tiempo lo permita!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Demostración de los robots y reflexión sobre el proceso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>Anuncia la actividad y pide una reflexión individual sobre el proceso de construcción y programación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Excelente trabajo, equipos! Llegamos al <strong>Gnius STORM</strong>. Antes de mostrar sus creaciones, piensen un momento: ¿Qué fue lo más difícil: la construcción del mecanismo/chasis o el ajuste de los tiempos en el programa?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Demo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Los equipos hacen una pequeña demostración de la secuencia de su robot.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Es hora de la demostración! Cada equipo hará una pequeña demostración de la secuencia de su robot. Mientras lo hacen, cuéntennos qué hace que su secuencia se vea bien coordinada. ¡Vamos a ver esas coreografías!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) Cierra la sesión y conecta con la siguiente unidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Increíble trabajo! Han pasado de un plan en papel a un robot que ejecuta una coreografía. Han demostrado ser verdaderos ingenieros y programadores. Ahora sus robots no solo se mueven, ¡sino que pueden realizar acciones precisas! Prepárense, porque pronto les daremos 'ojos' a estos atletas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
