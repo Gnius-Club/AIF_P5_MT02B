@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2B 5to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 4B 5to Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="timer">⏱️ 00:00</span>
@@ -70,9 +70,7 @@
                             <tr>
                                 <td>
                                     <strong>Objetivos:</strong>
-                                    <ul>
-                                        <li>Que los estudiantes, en equipo, construyan un mecanismo/chasis funcional con un servomotor en su robot Nezha, implementen el plan de secuencia que diseñaron, y prueben y ajusten su programa para lograr la rutina deseada.</li>
-                                    </ul>
+                                    Al final de la sesión, los estudiantes habrán construido un mecanismo con servo y programado una secuencia funcional de al menos 3 pasos, demostrando la coordinación de motores y pausas.
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
                                         <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
@@ -107,8 +105,13 @@
                                             </ul>
                                         </li>
                                         <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos y los tiempos.</li>
-                                        <li><strong>Ejemplo Profesor:</strong> Ten listo un ejemplo ya construido de un mecanismo simple con servo (ej. una palanca-pateadora) para dar inspiración visual.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Ten listo un ejemplo ya construido de un mecanismo simple con servo (ej. una palanca-pateadora) para dar inspiración visual. (Tiempo de preparación estimado: 15-20 minutos).</li>
                                     </ol>
+                                    <strong>Recursos Adicionales:</strong>
+                                    <ul>
+                                        <li>Video de 1 minuto sobre "qué es un servomotor": [Enlace al video]</li>
+                                        <li><strong>Resolución de problemas:</strong> Si el robot no se mueve, revisa: 1) Conexión del servo al puerto S1. 2) Batería. 3) Código...</li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -166,25 +169,25 @@
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Apoyo Físico (Ejemplificación) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 4) Muestra el ejemplo físico que preparaste para darles una idea clara de cómo se ve un mecanismo terminado.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Para darles una chispa de inspiración, aquí tienen un ejemplo de cómo se podría ver. (Muestra tu mecanismo pre-construido). Esto les puede dar una idea de cómo unir las piezas y el servo al chasis del robot.</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <h3>Paso 2: "I Can Statement" ⏰ 2 minutos</h3>
                             <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
                                 <p class="dialogue assistant">Lo segundo será traducir ese plan a código real y hacer que su robot ejecute la secuencia. Al final de la clase, podrán decir: <strong>'Mi equipo construyó un mecanismo con servo y logramos programar una secuencia completa de movimientos y pausas.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                           <h3>Paso 3: Apoyo Físico (Ejemplificación) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 4) Muestra el ejemplo físico que preparaste para darles una idea clara de cómo se ve un mecanismo terminado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para darles una chispa de inspiración, aquí tienen un ejemplo de cómo se podría ver. (Muestra tu mecanismo pre-construido). Esto les puede dar una idea de cómo unir las piezas y el servo al chasis del robot.</p>
                             </div>
                         </div>
                     </div>
@@ -225,6 +228,7 @@ ESPERAR(1000)
 // PASO FINAL: Detener todo
 nezha_motor_M1_velocidad(0)
 nezha_motor_M2_velocidad(0)</pre>
+                                <p><strong>Cómo explicarlo:</strong> "El plan se divide en pasos. En el PASO 1, estas dos líneas le ordenan a los motores M1 y M2 que se muevan hacia adelante a velocidad 60. Luego, el comando ESPERAR le dice al robot que haga ese movimiento durante 1.5 segundos..."</p>
                             </div>
                         </div>
                     </div>
