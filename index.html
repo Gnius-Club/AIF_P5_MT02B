@@ -69,8 +69,13 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <strong>Objetivos:</strong>
-                                    Al final de la sesión, los estudiantes habrán construido un mecanismo con servo y programado una secuencia funcional de al menos 3 pasos, demostrando la coordinación de motores y pausas.
+                                    <strong>Objetivos de aprendizaje PLAYBOOK:</strong>
+                                    <ul>
+                                        <li>Implementar el código GCS para el servomotor y para las secuencias de movimiento.</li>
+                                        <li>Utilizar diferentes valores de velocidad y pausas en una misma secuencia.</li>
+                                        <li>Practicar la fase de ajustes y depuración para lograr que la secuencia sea precisa.</li>
+                                    </ul>
+                                    <strong>Objetivo General de la Sesión:</strong> Que los estudiantes programen una coreografía de movimiento completa y fluida para el robot, aplicando el control de velocidad y la temporización con precisión.
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
                                         <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
@@ -163,7 +168,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Equipos, es momento de la acción con nuestra actividad <strong>'I Can Statement + Ejemplificación'</strong>! Ya tienen su plan maestro para crear una rutina robótica. Hoy nos enfocaremos en dos cosas: primero, construir el mecanismo/chasis con el servo que imaginaron, como una palanca o un brazo.</p>
+                                <p class="dialogue assistant">¡Equipos, es momento de la acción con nuestra actividad <strong>'I Can Statement + Ejemplificación'</strong>! En la sesión pasada construyeron el mecanismo con el servo. <strong>Hoy el 90% de nuestro enfoque estará en la programación, la depuración y lograr que la coreografía del robot sea perfecta y fluida.</strong></p>
                             </div>
                         </div>
                     </div>
@@ -206,7 +211,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien, entremos al <strong>A.I. GYM</strong>! Antes de tomar las piezas, recordemos la 'idea' de su secuencia. ¿Cuál era esa rutina o misión que planearon? Vuelvan a describirle su 'idea' a Xolo. Por ejemplo: <strong>'Xolo, queremos que el robot avance, se detenga, patee con el servo y luego retroceda.'</strong>. Él les devolverá el plan exacto para guiar su programación.</p>
+                                <p class="dialogue assistant">¡Muy bien, entremos al <strong>A.I. GYM</strong>! Antes de programar, recordemos la 'idea' de su secuencia. Escriban en el chat: <strong>"Mi perfil es [escribe aquí tu perfil] y quiero que me enseñes a programar GCS para el servo, a implementar secuencias de movimiento con diferentes velocidades/pausas, y a probar y ajustar mi código.'"</strong> Él les devolverá el plan exacto para guiar su programación.</p>
                                 <pre class="dialogue assistant" style="color: #d32f2f;">// PLAN para: Avanzar, Patear, Retroceder
 // PASO 1: Avanzar
 nezha_motor_M1_velocidad(60)
@@ -253,37 +258,37 @@ nezha_motor_M2_velocidad(0)</pre>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Construcción del Mecanismo/Chasis (Equipo) ⏰ 10 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Anuncia la actividad e indica a los equipos que comiencen el ensamblaje.</p>
+                            <h3>Paso 1: Recuperación y Traducción del Plan (Equipo) ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Anuncia la actividad e indica a los equipos que comiencen la programación.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Llegó la hora del <strong>Brain Spark</strong>! ¡Manos a la obra! Reúnanse con su equipo y, usando su chasis base, construyan juntos el mecanismo/chasis con servo que acordaron en la clase pasada. ¡Estaré circulando para ayudarles con cualquier desafío mecánico!</p>
+                                <p class="dialogue assistant">¡Llegó la hora del <strong>Brain Spark</strong>! ¡Manos al código! Asumiendo que su mecanismo con servo está montado y estable, su primera tarea es recuperar el plan de GCS que generaron en la sesión pasada o que Xolo les recordó. <strong>Abran MakeCode y traduzcan ese primer plan a bloques de programación.</strong> Asegúrense de usar los comandos `nezha_servo_S1_angulo`, `ESPERAR`, y los comandos de velocidad para los motores.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Organización y Primera Implementación (Equipo) ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Guía a los equipos para que se organicen y comiencen a programar el primer plan.</p>
+                            <h3>Paso 2: Primera Implementación, Prueba y Depuración Inicial (Equipo) ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Guía a los equipos para que realicen la primera prueba de su código.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                 <p class="dialogue assistant">¡Robot construido! Ahora, la parte estratégica. Recuerden que tienen varios planes individuales (hasta 4). <strong>Como equipo, elijan UNO de esos planes – el que les parezca más interesante o el que quieran ver funcionar primero.</strong> El 'dueño' de ese plan será el primero en programarlo en MakeCode. Los demás, ayúdenle o vayan preparando su propio código. Abran MakeCode, traduzcan el plan elegido a bloques y descárguenlo. ¡Vamos a ver esa primera prueba! La organización y la colaboración son cruciales.</p>
+                                 <p class="dialogue assistant">¡Es momento de la primera prueba! Conecten su robot. **Carguen el código en el Micro:bit y ejecuten la secuencia.** Observen atentamente. ¿El robot se mueve a la velocidad correcta? ¿La acción del servo está bien coordinada con la pausa (`ESPERAR`)? Si hay fallos, eso significa que el tiempo o la velocidad necesitan ajustes. ¡El depurado ha comenzado!</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 3: Probar, Depurar y Rotar Planes (Equipo) ⏰ 5 minutos</h3>
+                            <h3>Paso 3: Depuración Profunda y Rotación de Planes (Equipo) ⏰ 5 minutos</h3>
                             <p>(Proyectar Diapositiva 9) Facilita el ciclo de prueba y depuración rotativo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                 <p class="dialogue assistant">¡Hora de la verdad! Prueben el plan actual. ¿Funciona? ¡Genial! <strong>Si no funciona perfectamente sin errores, ¡no hay problema! Es momento de depurar en equipo. Describan el problema a Xolo para que les ayude a perfeccionarlo.</strong> Una vez que el plan esté funcionando perfectamente, ¡roten! El siguiente miembro del equipo carga su plan individual y lo prueba. El objetivo es que todos los miembros del equipo logren ejecutar sus planes, ¡así que intenten probar tantos como el tiempo lo permita!</p>
+                                 <p class="dialogue assistant">¡Continuemos con la depuración! <strong>Ajusten los valores de ESPERAR y la VELOCIDAD de los motores</strong> hasta que la coreografía se vea fluida y precisa. Una vez que el primer plan esté funcionando perfectamente, ¡roten! El siguiente miembro del equipo carga su plan individual (que tiene una secuencia diferente) y lo prueba. El objetivo es que todos los miembros del equipo logren ejecutar sus planes, ¡así que intenten probar tantos como el tiempo lo permita!</p>
                             </div>
                         </div>
                     </div>
